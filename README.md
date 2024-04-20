@@ -13,15 +13,15 @@ The goal of this project is to build a VQA model that can take a pair of Image a
 - Feature extraction: ResNet network pre-trained network is ultilized to extract features from the Image. For the Text (Question and Answer), the features are extracted using a Bi-LSTM network.
 - Feature combination: After the extraction phase, these features will be transformed into a 1024-dimensional vector via a fully connected layer. These vectors will then be aggerated via element-wise multiplication, creating a unified representation of both modalities.
 - Classification: The combined features pass through layers (fully connected, ReLU, Dropout) and culminate in a final fully connected layer that predicts the answer from predefined classes.
-### Transformer Model
+### 3. Transformer Model
 - Image extraction with transfer learning: Vision Transformer (ViT) pre-trained model is used to encode images.
 - Text extraction with transfer learning: Employs a RoBERTa model to encode text questions.
 
-B. Result
+## B. Result
 ### CNN + LSTM: achieved 0.55 accuracy on Test set.
 ### ViT + RoBERTa : achieved 0.67 accuracy on Test set.
 
-C. References
+## C. References
 - He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep residual learning for image recognition. Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).
 - Graves, A., & Schmidhuber, J. (2005). Framewise phoneme classification with bidirectional LSTM and other neural network architectures. Neural Networks, 18(5-6), 602-610.
 - Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., ... & Houlsby, N. (2021). An image is worth 16x16 words: Transformers for image recognition at scale. Proceedings of the International Conference on Learning Representations.
