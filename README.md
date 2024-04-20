@@ -18,8 +18,8 @@ The goal of this project is to build a VQA model that can take a pair of Image a
 - Text extraction with transfer learning: Employs a RoBERTa model to encode text questions.
 
 ## B. Result
-### CNN + LSTM: achieved 0.55 accuracy on Test set.
-### ViT + RoBERTa : achieved 0.67 accuracy on Test set.
+- CNN + LSTM: achieved 0.55 accuracy on Test set.
+- ViT + RoBERTa : achieved 0.67 accuracy on Test set.
 
 ## C. References
 - He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep residual learning for image recognition. Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).
